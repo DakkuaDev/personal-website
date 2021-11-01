@@ -1,0 +1,133 @@
+// button,
+.bttn {
+    line-height: 55px;
+    background-color: $color1;
+    display      : inline-block;
+    min-width    : 385px;
+    position: relative;
+    border:2px transparent solid;
+    overflow: hidden;
+    
+    span {
+		color        : #fff;
+	    font-size: 25px*0.8;
+	    text-transform: uppercase;
+	    position: relative;
+	    z-index: 2; 
+	    display: block;
+	    transition: all 0.5s ease;
+	    &:after {
+	        content: '';
+	        display: block;
+	        position: absolute;
+	        height: 100%;
+	        background-color: #000;
+	        width: 2px; 
+	        left:-2px;
+	        top:0;
+	    }
+	    &:before {
+	        content: '';
+	        display: block;
+	        position: absolute;
+	        height: 100%;
+	        background-color: #000;
+	        width: 2px; 
+	        right:-2px;
+	        top:0;
+	    }
+    }
+    &:hover {
+    	span {color: #000;}
+    }
+    &:hover:after {
+    	width: 140%;
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -80%;
+        width: 0%;
+        height: 100%;
+        z-index: 1;
+        background-color: #fff;
+        -webkit-transform: skew(-25deg);
+        transform: skew(-25deg);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+}
+
+
+// button,
+.bttn2 {
+    line-height: 55px;
+    background-color: $color1;
+    display      : inline-block;
+    min-width    : 385px;
+    position: relative;
+    border:2px transparent solid;
+    overflow: hidden;
+    margin-top: 70px; 
+    
+    span {
+        color        : #fff;
+        font-size: 25px*0.8;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2; 
+        display: block;
+        transition: all 0.5s ease;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            background-color: #000;
+            width: 2px; 
+            left:-2px;
+            top:0;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            background-color: #000;
+            width: 2px; 
+            right:-2px;
+            top:0;
+        }
+    }
+    &:hover {
+        span {color: #000;}
+    }
+    &:hover:after {
+        width: 140%;
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -80%;
+        width: 0%;
+        height: 100%;
+        z-index: 1;
+        background-color: #fff;
+        -webkit-transform: skew(-25deg);
+        transform: skew(-25deg);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+}
+
+.text-violet {color: $color1 !important;}

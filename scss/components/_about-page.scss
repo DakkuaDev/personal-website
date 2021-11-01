@@ -1,0 +1,59 @@
+.about-wrapper {
+	h2 {
+		font-weight: bold;
+		line-height: 52px;
+		color: #111;
+		margin-bottom: 65px;
+	}
+	h3 {
+		font-weight: bold;
+		line-height: 20px;
+		font-size: 16px;
+	}
+	h6 {
+		span {
+			font-size: 13px;
+			font-weight: bold;
+			color: #999;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+		}
+	}
+	p {
+		color: #111;
+		font-weight: 400;
+		margin-bottom: 15px;
+	}
+	hr {
+		width: 100%;
+		border: 0;
+		margin-top: 30px;
+	}
+}
+.sign {
+	font-size: 13px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+}
+.video-play {
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	background-color: #fff;
+	border-radius: 100%;
+	margin-top: -25px;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: inline-block;
+	i {
+		color: #000;
+		position: relative;
+		left: 3px;
+	}
+}

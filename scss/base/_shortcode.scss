@@ -1,0 +1,99 @@
+body {color: #111; font-family: 'Montserrat', sans-serif;font-size: 14px;font-weight: 400;overflow-x: hidden;height: 100%}
+dl,dt,dd,ol,ul,li {margin: 0;padding: 0;}
+a {color: #333;text-decoration: none;position: relative;transition: all 0.3s;}
+a:focus,
+a:hover {color: #777;text-decoration: none;}
+img {max-width: 100%;}
+:active,
+:focus {outline: none !important;}
+::-webkit-input-placeholder {color: #ccccd4;}
+:-ms-input-placeholder {color: #ccccd4;}
+::-ms-input-placeholder {color: #ccccd4;}
+::placeholder {color: #ccccd4;}
+.form-control {border-radius: 0}
+.form-control:focus {border-color: #777;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
+.pad-no {padding-left: 0 !important;padding-right: 0 !important;  }
+.pad-20{padding-top: 20px !important; padding-bottom: 20px !important; }
+.pad-25 {padding-top: 25px; padding-bottom: 25px; }
+.pad-50 {padding-top: 50px; padding-bottom: 50px; }
+.pad-75 {padding-top: 75px; padding-bottom: 75px; }
+.pad-100 {padding-top: 100px; padding-bottom: 100px; }
+.pad-125 {padding-top: 125px; padding-bottom: 125px; }
+.pad-150 {padding-top: 150px; padding-bottom: 150px; }
+.pad-200 {padding-top: 200px; padding-bottom: 200px; }
+.pad-top-25 {padding-top: 25px; }
+.pad-top-50 {padding-top: 50px; }
+.pad-top-75 {padding-top: 75px; }
+.pad-top-100 {padding-top: 100px; }
+.pad-top-150 {padding-top: 150px; }
+.pad-left-30 {padding-left: 30px; }
+.pad-right-30 {padding-right: 30px; }
+.pad-left-50 {padding-left: 50px; }
+.pad-left-180 {padding-left: 180px; }
+.pad-right-50 {padding-right: 50px; }
+.pad-left-90 {padding-left: 90px; }
+.pad-right-90 {padding-right: 90px; }
+.pad-bottom-50 {padding-bottom: 50px; }
+.pad-bottom-75 {padding-bottom: 75px; }
+.pad-bottom-100 {padding-bottom: 100px; }
+.pad-bottom-150 {padding-bottom: 150px; }
+.no-pad {padding-left: 0; padding-right: 0;}
+.mt25 {margin-top:25px; }
+.mt50 {margin-top:50px; }
+.mt75 {margin-top:75px; }
+.mt100 {margin-top:100px; }
+.mb25 {margin-bottom:25px; }
+.mb35 {margin-bottom:35px; }
+.mb40 {margin-bottom:40px; }
+.mb50 {margin-bottom:50px; }
+.mb75 {margin-bottom:75px; }
+.mb100 {margin-bottom:100px; }
+.pr-0 {padding-right: 0 !important; }
+.pl-0 {padding-left: 0 !important; }
+.d-inline {display: inline !important;}
+.d-block {display: block !important;width: 100%;}
+.d-tc {display: table-cell !important;vertical-align: middle;}
+.float-none {float: none !important;}
+.no-border {border: none !important;}
+.posleft-15 {position: relative; left:15px; }
+section {position: relative; }
+blockquote {padding: 20px 20px;margin: 0 0 20px;font-size: 16px;background: #F7F7F7;border-radius: 10px;}
+blockquote p {line-height: 1.6;}
+.bg-lightblue {background-color: #f4f8fb; }
+.bg-pattern {background-image: url(../images/bg-pattern-1.png); background-repeat: no-repeat; background-size: cover; }
+.bg-pattern-2 {background-image: url(../images/bg-pattern-2.jpg); background-repeat: repeat; background-size: cover; }
+.fullpage-wrapper .hover-blog-image.bg-bottom-left {background-position: left bottom; background-size: 230%; }
+.load {line-height: 45px; min-width: 180px; padding: 0 25px; font-size: 16px; color: #111; font-weight: bold; height: 50px; border:2px #333 solid; display: inline-block; }
+.button-4{width:180px;height:50px;border:2px solid #333;text-align:center;cursor:pointer;position:relative;box-sizing:border-box;overflow:hidden;}
+.button-4 a{font-size:14px;letter-spacing: 1px;  text-transform: uppercase;font-weight: bold;color:#333;text-decoration:none;line-height:47px;transition:all .5s ease;z-index:2;position:relative;}
+.button-4 button{outline: none; background-color: transparent; border:0;  font-size:14px;letter-spacing: 1px;  text-transform: uppercase;font-weight: bold;color:#333;text-decoration:none;line-height:47px;transition:all .5s ease;z-index:2;position:relative;}
+.send_message {cursor: pointer; outline: none; background-color: transparent; border:0;  font-size:14px;letter-spacing: 1px;  text-transform: uppercase;font-weight: bold;color:#333;text-decoration:none;line-height:47px;transition:all .5s ease;z-index:2;position:relative;}
+.eff-4{width:180px;height:50px;left:-180px;background:#34495e;position:absolute;transition:all .5s ease;z-index:1;}
+.button-4:hover .eff-4{left:0;}
+.button-4:hover a{color:#fff;}
+.button-4:hover button {color:#fff; }
+.button-4:hover .send_message {color:#fff; }
+.button-5 {font-size:14px;letter-spacing: 1px;  text-transform: uppercase;font-weight: bold;color:#333;text-decoration:none; line-height: 30px; border-bottom: 2px #333 solid; display: inline-block; }
+
+.line-link:after {height: 40px;background-color: #111; width: 2px; position: absolute; bottom: -60px; content: ''; position: absolute; left:95px; }
+.has-animation {opacity: 0;-webkit-transition:  transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s; -webkit-transition:translateY(80px);transform: translateY(80px);}
+.has-animation.animate-in {opacity: 1;-webkit-transition:translateY(0px);transform: translateY(0px);}
+.posttext-stroke {   text-stroke: 1px #000;    -webkit-text-stroke: 1px #000; -webkit-text-fill-color: transparent; font-weight: 500; font-size: 30px; line-height:48px; display: inline-block; position: relative; }
+.posttext-stroke:after { -webkit-text-fill-color: #333;   position: absolute;    top: 0;    left: 0;    font-size: 30px; content: attr(data-title); clip-path: inset(0 0 0 0);-webkit-clip-path: inset(0 0 0 0);-webkit-transition: 1s;-moz-transition: 1s;transition: 1s;}
+.posttext-stroke:hover:after {clip-path: inset(0 0 0 100%);    -webkit-clip-path: inset(0 0 0 100%); -webkit-text-fill-color: #333; }
+.dots {position: relative; }
+.dots:before {content: ''; width: 3px; height: 3px; background-color: #eee; border-radius: 100%; position: absolute; top:20px; right: 20px; display: inline-block !important; } 
+.boright {border-right: 1px #eeee solid;}
+.bobottom{border-bottom: 1px #eeee solid;}
+
+h1 {font-size: 40px;}
+h2 {font-size: 32px;}
+h3 {font-size: 26px;}
+h4 {font-size: 22px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+b,.bold {font-weight: 700 !important}
+p {color: #111;font-size: 16px;font-weight: 400;line-height: 32px;margin-bottom: 0;}
+li {font-size: 13px;font-weight: 400;line-height: 30px;}
+.display-md {display: none;} 
+

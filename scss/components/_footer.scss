@@ -1,0 +1,276 @@
+.footer-wrapper {
+	.widget-over {
+		background-color: #FFF;
+		&:after {
+			content: '';
+			height: 75px;
+			width: 100%;
+			background-color: #fff;
+			top: 100%;
+			left: 0;
+			position: absolute;
+		}
+		&:before {
+			content: '';
+			height: 75px;
+			width: 100%;
+			background-color: #fff;
+			bottom: 100%;
+			left: 0;
+			position: absolute;
+		}
+		.subscribe-form {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.back-top {
+			margin-top: 15px;
+		}
+	}
+	.social-share {
+		li {
+			font-size: 16px;
+			margin-right: 20px;
+			a {
+				i {
+					color: #333;
+				}
+			}
+		}
+	}
+	.widget-link-2 {
+		li {
+			a {
+				margin-right: 20px;
+				font-size: 14px;
+				font-weight: 400;
+				color: #000;
+			}
+		}
+	}
+	.widget-text {
+		font-size: 16px;
+		line-height: 34px;
+		color: #000;
+		font-weight: 300;
+		letter-spacing: 0.2px;
+		margin-top: 5px;
+		margin-bottom: 15px;
+		display: inline-block;
+	}
+	p {
+		font-size: 14px !important;
+		line-height: 30px;
+		color: #000;
+		font-weight: 400;
+		letter-spacing: 0.4px;
+		margin-right: 0;
+	}
+	&.style-2 {
+		.widget-link {
+			li {
+				a {
+					font-size: 14px;
+					line-height: 44px;
+					color: #000;
+					font-weight: 400;
+					letter-spacing: 0.4px;
+				}
+			}
+		}
+		button {
+			i {
+				color: #555;
+				font-size: 12px;
+			}
+		}
+	}
+}
+.widget-title {
+	font-size: 14px;
+	line-height: 44px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+.widget-title2 {
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 7px;
+	display: inline-block;
+	line-height: 26px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.widget-title3 {
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 35px;
+	display: inline-block;
+}
+.widget-link {
+	li {
+		width: 100%;
+		float: left;
+		position: relative;
+		display: block;
+		a {
+			font-size: 14px;
+			line-height: 45px;
+			color: #000;
+			font-weight: 400;
+		}
+	}
+}
+.widget {
+	p {
+		font-size: 16px;
+		line-height: 32px;
+		color: #333;
+		font-weight: 300;
+	}
+}
+.subscribe-form {
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	margin-top: 25px;
+	display: table;
+	input {
+		width: 65%;
+		background: transparent;
+		float: left;
+		line-height: 40px;
+		outline: none;
+		border: 0;
+		padding: 0;
+		font-size: 12px;
+		color: #555;
+	}
+	button {
+		float: right;
+		width: 30%;
+		background-color: transparent;
+		text-align: right;
+		color: #111;
+		font-size: 16px;
+		outline: none;
+		border: 0;
+		line-height: 40px;
+		padding: 0;
+		font-weight: 500; 
+	}
+}
+.subscribe-form-two {
+	position: relative;
+	padding: 100px 0;
+	background-color: #111;
+	.headline {
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 400;
+		color: #fff;
+	}
+	form {
+		border-bottom: 1px #ccc solid;
+		width: 430px;
+		margin: 0 auto;
+	}
+	input {
+		width: 75%;
+		float: left;
+		background-color: transparent;
+		border: 0;
+		line-height: 45px;
+		height: 45px;
+		display: inline-block;
+		margin-right: 0;
+	}
+	button {
+		padding: 0;
+		text-align: right;
+		width: 25%;
+		line-height: 45px;
+		display: inline-block;
+		background-color: transparent;
+		border: 0;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+	.back-top {
+		margin-top: 70px;
+	}
+}
+.copyright-text {
+	font-size: 16px;
+	line-height: 28px;
+	color: #111;
+	font-weight: 300;
+}
+.back-top {
+	font-size: 14px;
+	font-weight: 600;
+	color: #111;
+	margin-top: 45px;
+	display: block;
+	letter-spacing: 1px;
+}
+.icon-back {
+	border: 1px solid #ccc;
+	img {
+		width: 45px;
+	}
+}
+.social-icons-two {
+	margin-bottom: 35px;
+	li {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+		a {
+			display: inline-block;
+			i {
+				background-image: url(../images/icon-2.png);
+				background-repeat: no-repeat;
+				background-size: inherit;
+				width: 26px;
+				height: 26px;
+				display: inline-block;
+			}
+			i.icon-google-plus {
+				background-position: 0 0;
+			}
+			i.icon-facebook {
+				background-position: -60px 0;
+			}
+			i.icon-twitter {
+				background-position: -120px 0;
+			}
+			i.icon-linedin {
+				background-position: -180px 0;
+			}
+			i.icon-instagram {
+				background-position: -250px 0;
+			}
+		}
+	}
+}
+
+.footer-wrapper.bgc-top {
+	&:after {
+		content: '';
+		position: absolute;
+		background-color: #f4f8fb;
+		bottom: 100%;
+		left: 0;
+		width: 100%;
+		height: 150%;
+		z-index: -1;
+	}
+}

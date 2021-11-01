@@ -1,0 +1,55 @@
+.search-section {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(255,255,255,0.97);
+	display: none;
+	.close-search {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 101;
+	}
+	.centered {
+		position: absolute;
+		width: 900px;
+		top: 50%;
+		left: 50%;
+		margin-top: -35px;
+		margin-left: -450px;
+		form {
+			width: 100%;
+			input {
+				color: #333;
+				font-weight: 300;
+				font-size: 30px;
+				width: 85%;
+				float: left;
+				border: 0;
+				border-bottom: 1px #aaa solid;
+				height: 70px;
+				background-color: transparent;
+				line-height: 70px;
+			}
+			button {
+				line-height: 70px;
+				font-size: 30px;
+				font-weight: 300;
+				cursor: pointer;
+				width: 15%;
+				font: 30px;
+				text-align: right;
+				display: inline-block;
+				height: 70px;
+				border: 0;
+				border-bottom: 1px #aaa solid;
+				float: right;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
