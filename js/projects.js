@@ -363,7 +363,7 @@ function renderProjects(lang) {
     const tagsHtml = project.tags.map(t => `<span class="project-tag">${t}</span>`).join("");
 
     return `
-      <article class="project-card has-animation" data-delay="0">
+      <article class="project-card has-animation animate-in" data-delay="0">
         <div class="project-image">
           <img src="${project.image}" alt="${title}" onerror="this.src='images/myPics/logo-2.png'">
         </div>

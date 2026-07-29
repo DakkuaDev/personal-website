@@ -76,7 +76,6 @@ const i18n = {
 
     /* Events organized */
     "events.title": "Eventos Organizados",
-    "events.subtitle": "Eventos que he co-organizado en Asturias para crecer la comunidad.",
     "events.gamedevs25": "Encuentro GameDevs Asturias 2025",
     "events.ggj26": "Global Game Jam Asturias 2026",
     "events.gamedevs26": "Encuentro GameDevs Asturias 2026",
@@ -187,7 +186,6 @@ const i18n = {
 
     /* Events organized */
     "events.title": "Events Organized",
-    "events.subtitle": "Events I've co-organized in Asturias to grow the game dev and XR community.",
     "events.gamedevs25": "GameDevs Asturias Meetup 2025",
     "events.ggj26": "Global Game Jam Asturias 2026",
     "events.gamedevs26": "GameDevs Asturias Meetup 2026",
