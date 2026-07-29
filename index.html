@@ -27,22 +27,26 @@
 		html { scroll-behavior: smooth; }
 		
 		.header-wrapper { position: fixed; top: 0; width: 100%; z-index: 1000; transition: background 0.3s; }
-		.header-wrapper.scrolled { background: rgba(38, 47, 90, 0.97); box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+		.header-wrapper.scrolled { background: rgba(25, 25, 50, 0.95); box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
 		
 		body { padding-top: 80px; }
 		
 		.section-pad { padding: 80px 0; }
 		
 		.nav-lang { display: inline-flex; align-items: center; margin-left: 15px; gap: 3px; }
-		.lang-toggle { background: none; border: 1px solid rgba(255,255,255,0.3); color: #fff; 
-			padding: 2px 8px; font-size: 12px; cursor: pointer; border-radius: 3px; 
+		.lang-toggle { background: none; border: 1px solid rgba(0,0,0,0.3); color: #333;
+			padding: 2px 8px; font-size: 12px; cursor: pointer; border-radius: 3px;
 			font-family: 'Poppins', sans-serif; font-weight: 500; transition: all 0.2s; }
+		.header-wrapper.scrolled .lang-toggle { border-color: rgba(255,255,255,0.3); color: #fff; }
+		.header-wrapper.scrolled .lang-toggle:hover { border-color: #fff; }
+		.lang-toggle:hover { border-color: #333; }
 		.lang-toggle.active { background: #3639AE; border-color: #3639AE; color: #fff; }
-		.lang-toggle:hover { border-color: #fff; }
-		.nav-lang .sep { color: rgba(255,255,255,0.3); font-size: 12px; }
+		.nav-lang .sep { color: rgba(0,0,0,0.3); font-size: 12px; }
+		.header-wrapper.scrolled .nav-lang .sep { color: rgba(255,255,255,0.3); }
 		
 		/* Nav links in SPA mode - scroll to sections */
 		#main-menu a[href^="#"] { cursor: pointer; }
+		.header-wrapper.scrolled #main-menu ul li a { color: #fff; }
 		
 		/* Experience timeline */
 		.timeline { position: relative; padding-left: 30px; }
