@@ -31,7 +31,7 @@ const projectsData = [
       es: "Product & Technical Lead, Unity Developer",
       en: "Product & Technical Lead, Unity Developer"
     },
-    image: "images/myPics/logo-2.png", // TODO: add Google Play screenshot
+    image: "images/myPics/poblarte-screenshot.jpg",
     links: {
       github: null,
       itchio: null,
@@ -55,7 +55,7 @@ const projectsData = [
       es: "Unity VR Developer",
       en: "Unity VR Developer"
     },
-    image: "images/myPics/logo-2.png", // TODO: add screenshot from vrfp.es
+    image: "images/myPics/vrfp-alta-tension.jpg",
     links: {
       github: null,
       itchio: null,
@@ -79,7 +79,7 @@ const projectsData = [
       es: "Unity VR Developer",
       en: "Unity VR Developer"
     },
-    image: "images/myPics/logo-2.png", // TODO: add screenshot from vrfp.es
+    image: "images/myPics/vrfp-jardineria.jpg",
     links: {
       github: null,
       itchio: null,
@@ -103,7 +103,7 @@ const projectsData = [
       es: "XR Developer (ITCL)",
       en: "XR Developer (ITCL)"
     },
-    image: "images/myPics/logo-2.png", // TODO: add screenshot
+    image: "images/myPics/funper-screenshot.webp",
     links: {
       github: null,
       itchio: null,
@@ -127,7 +127,7 @@ const projectsData = [
       es: "XR Developer (ITCL)",
       en: "XR Developer (ITCL)"
     },
-    image: "images/myPics/logo-2.png", // TODO: add screenshot
+    image: "images/myPics/genius-screenshot.jpg",
     links: {
       github: null,
       itchio: null,
@@ -151,7 +151,7 @@ const projectsData = [
       es: "Desarrollador Unity",
       en: "Unity Developer"
     },
-    image: "images/myPics/logo-2.png", // TODO: add screenshot
+    image: "images/myPics/worldlabs-screenshot.jpg",
     links: {
       github: "https://github.com/DakkuaDev/unity-worldlabs.ai-API-client-tool",
       itchio: null,

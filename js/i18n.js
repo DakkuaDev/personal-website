@@ -85,7 +85,6 @@ const i18n = {
 
     /* Projects */
     "projects.title": "Proyectos",
-    "projects.subtitle": "Selección de proyectos gestionada desde datos. Añadir o quitar es solo editar el array.",
     "projects.github": "GitHub",
     "projects.itchio": "itch.io",
     "projects.view": "Ver proyecto",
@@ -197,7 +196,6 @@ const i18n = {
 
     /* Projects */
     "projects.title": "Projects",
-    "projects.subtitle": "A selection of personal and professional projects. I can easily add or remove projects by editing the data array.",
     "projects.github": "GitHub",
     "projects.itchio": "itch.io",
     "projects.view": "View project",
