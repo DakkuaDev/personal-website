@@ -17,6 +17,126 @@
 
 const projectsData = [
   {
+    id: "poblarte",
+    title: {
+      es: "PoblARte — Realidad Aumentada",
+      en: "PoblARte — Augmented Reality"
+    },
+    description: {
+      es: "App de Realidad Aumentada (Android/iOS) para poner en valor el patrimonio cultural. Liderada por INVELON, financiada por MITECO con la Universidad de Oviedo.",
+      en: "Augmented Reality app (Android/iOS) showcasing cultural heritage. Led by INVELON, funded by MITECO with Universidad de Oviedo."
+    },
+    year: "2025",
+    role: {
+      es: "Product & Technical Lead, Unity Developer",
+      en: "Product & Technical Lead, Unity Developer"
+    },
+    image: "images/myPics/logo-2.png", // TODO: add Google Play screenshot
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://play.google.com/store/apps/details?id=com.invelon.TTPoblarte&hl=es"
+    },
+    tags: ["AR", "Unity", "Android", "iOS", "Cultural Heritage"]
+  },
+  {
+    id: "vrfp-alta-tension",
+    title: {
+      es: "Simulador VR — Trabajos en Media y Alta Tensión",
+      en: "VR Simulator — Medium & High Voltage Work"
+    },
+    description: {
+      es: "Simulador en Realidad Virtual para el entrenamiento en trabajos de mantenimiento en instalaciones de media y alta tensión. Desarrollado para el programa Aulas Ateca (Meta Quest 2).",
+      en: "VR simulator for training in high/medium voltage maintenance work. Developed for the Aulas Ateca program (Meta Quest 2)."
+    },
+    year: "2022",
+    role: {
+      es: "Unity VR Developer",
+      en: "Unity VR Developer"
+    },
+    image: "images/myPics/logo-2.png", // TODO: add screenshot from vrfp.es
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://vrfp.es/simuladores/trabajos-en-media-y-alta-tension/"
+    },
+    tags: ["VR", "Unity", "Meta Quest 2", "Formación Profesional"]
+  },
+  {
+    id: "vrfp-jardineria",
+    title: {
+      es: "Simulador VR — Jardinería y Forestal",
+      en: "VR Simulator — Gardening & Forestry"
+    },
+    description: {
+      es: "Simulador VR para practicar con herramientas de jardinería y forestales, manejo de plataforma elevadora y EPIs. Desarrollado para Aulas Ateca (Meta Quest 2).",
+      en: "VR simulator for practicing with gardening and forestry tools, aerial platform operation and PPE. Developed for Aulas Ateca (Meta Quest 2)."
+    },
+    year: "2022",
+    role: {
+      es: "Unity VR Developer",
+      en: "Unity VR Developer"
+    },
+    image: "images/myPics/logo-2.png", // TODO: add screenshot from vrfp.es
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://vrfp.es/simuladores/jardineria-y-forestal/"
+    },
+    tags: ["VR", "Unity", "Meta Quest 2", "Formación Profesional"]
+  },
+  {
+    id: "funper",
+    title: {
+      es: "FUNPER — Rehabilitación con IA y VR",
+      en: "FUNPER — AI & VR Rehabilitation"
+    },
+    description: {
+      es: "Sistema gamificado de rehabilitación para pacientes con parálisis cerebral en extremidades superiores. IA + visión artificial + VR. Proyecto galardonado con Premio IA de AEMETIC 2024.",
+      en: "Gamified rehab system for cerebral-palsy patients' upper limbs. AI + computer vision + VR. Awarded AEMETIC AI Prize 2024."
+    },
+    year: "2024",
+    role: {
+      es: "XR Developer (ITCL)",
+      en: "XR Developer (ITCL)"
+    },
+    image: "images/myPics/logo-2.png", // TODO: add screenshot
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://fundacionpersonas.es/proyectos/funper/"
+    },
+    tags: ["VR", "AI", "Computer Vision", "Rehab", "Serious Game", "Premio"]
+  },
+  {
+    id: "genius",
+    title: {
+      es: "GENIUS — IA Emocional para Vehículos",
+      en: "GENIUS — Emotional AI for Vehicles"
+    },
+    description: {
+      es: "Sistema basado en IA que reconoce estados emocionales y cognitivos de usuarios del vehículo y adapta iluminación, sonido y aromas. Liderado por Antolín con ITCL. Proyecto CDTI + FEDER (1.95M€).",
+      en: "AI system that recognizes emotional and cognitive states of vehicle occupants and adapts lighting, sound and scents. Led by Antolín with ITCL. CDTI + FEDER project (€1.95M)."
+    },
+    year: "2024",
+    role: {
+      es: "XR Developer (ITCL)",
+      en: "XR Developer (ITCL)"
+    },
+    image: "images/myPics/logo-2.png", // TODO: add screenshot
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://www.antolin.com/es/antolin-lanza-el-proyecto-genius-para-desarrollar-sistemas-basados-en-inteligencia-artificial-que"
+    },
+    tags: ["AI", "Automotive", "ITCL", "Biometrics", "R&D"]
+  },
+  {
     id: "worldlabs",
     title: {
       es: "Unity WorldLabs.ai API Client Tool",
