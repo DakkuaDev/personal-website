@@ -34,12 +34,12 @@ const i18n = {
     "hero.cv_po_en": "EN (PO)",
     "hero.avatar_alt": "Daniel Guerra avatar",
 
-    /* About */
+    /* About — rewritten with personal voice */
     "about.title": "Sobre Mí",
     "about.intro": "XR Developer & Product Owner — diseño y entrego productos inmersivos (VR/AR/XR) de principio a fin: desde discovery y backlog hasta implementación en Unity/C# y despliegue en store. MBA + Google PM cert. Community builder (GameDevs Asturias).",
-    "about.p1": "Graduado en Diseño y Desarrollo de Videojuegos por la UCJC, HND en Creative Media Production – Game Development y MBA en Dirección de Empresas por la UNIR. Certificado en Gestión de Proyectos de Google y FCE (B2) de Cambridge.",
-    "about.p2": "Cuento con más de 4 años de experiencia profesional como desarrollador XR en proyectos de I+D+i para empresas líderes en España: Innovae Group, ITCL, e INVELON. He liderado equipos de hasta 5 desarrolladores, gestionado presupuestos y entregado productos para Meta Quest, Android/iOS y Windows.",
-    "about.p3": "Me apasiona comunicar: he sido profesor asociado en la Universidad de Burgos, ponente invitado en universidades y eventos, y co-organizador de GameDevs Asturias. Creo en la tecnología inmersiva como herramienta transformadora.",
+    "about.p1": "Siempre he creído que los videojuegos y la tecnología inmersiva pueden cambiar la forma en que aprendemos, trabajamos y nos conectamos. Por eso empecé: primero como jugador curioso, luego como estudiante de desarrollo de videojuegos, y hoy como XR Developer & Product Owner. Mi camino me llevó a especializarme en Realidad Virtual y Aumentada porque vi que era donde la tecnología podía tener un impacto real — en formación industrial, rehabilitación, educación y cultura.",
+    "about.p2": "Hoy lidero productos XR end-to-end en INVELON: desde entender qué necesita el cliente hasta ver el producto en la store. Me apasiona tanto el código (Unity, C#, .NET) como la estrategia de producto (backlog, estimaciones, stakeholders). He trabajado con Innovae Group, ITCL y otras empresas punteras en I+D+i, siempre en la intersección entre tecnología y personas.",
+    "about.p3": "Pero lo que más me motiva es la comunidad. Soy co-organizador de GameDevs Asturias, donde conectamos a creadores, estudiantes y profesionales del videojuego y la XR en Asturias. También he sido profesor en la Universidad de Burgos, ponente en eventos como FIMP, UBU Party y el Festival Creando, y mentor en game jams. Creo en compartir lo que aprendes — y en rodearte de gente que te empuja a ser mejor.",
     "about.sign": "\"Knowledge is power, but enthusiasm pulls the switch\"",
 
     /* Experience */
@@ -74,9 +74,18 @@ const i18n = {
     "exp.edu_2": "BSc — Diseño y Desarrollo de Videojuegos (UCJC)",
     "exp.edu_3": "HND — Creative Media Production – Game Development (UDIT)",
 
+    /* Events organized */
+    "events.title": "Eventos Organizados",
+    "events.subtitle": "Eventos que he co-organizado en Asturias para crecer la comunidad.",
+    "events.gamedevs25": "Encuentro GameDevs Asturias 2025",
+    "events.ggj26": "Global Game Jam Asturias 2026",
+    "events.gamedevs26": "Encuentro GameDevs Asturias 2026",
+    "events.cometcon26": "Convocatoria Indie — CometCon 2026",
+    "events.gamedevs_url": "https://www.instagram.com/gamedevs.asturias/",
+
     /* Projects */
     "projects.title": "Proyectos",
-    "projects.subtitle": "Selección de proyectos personales y profesionales. Añado y quito proyectos fácilmente desde el array de datos.",
+    "projects.subtitle": "Selección de proyectos gestionada desde datos. Añadir o quitar es solo editar el array.",
     "projects.github": "GitHub",
     "projects.itchio": "itch.io",
     "projects.view": "Ver proyecto",
@@ -137,12 +146,12 @@ const i18n = {
     "hero.cv_po_en": "EN (PO)",
     "hero.avatar_alt": "Daniel Guerra avatar",
 
-    /* About */
+    /* About — rewritten with personal voice */
     "about.title": "About Me",
     "about.intro": "XR Developer & Product Owner — I design and ship immersive VR/AR/XR products end-to-end: from discovery and backlog to Unity/C# implementation and store deployment. MBA + Google PM cert. Community builder (GameDevs Asturias).",
-    "about.p1": "Graduate in Video Game Design & Development (UCJC), HND in Creative Media Production – Game Development, and MBA in Business Administration (UNIR). Google Project Management certified and Cambridge FCE (B2).",
-    "about.p2": "4+ years of professional experience as an XR developer in R&D+i projects for leading Spanish companies: Innovae Group, ITCL, and INVELON. I've led teams of up to 5 developers, managed budgets, and delivered products for Meta Quest, Android/iOS and Windows.",
-    "about.p3": "I'm passionate about communication: associate professor at Universidad de Burgos, guest speaker at universities and events, co-organizer of GameDevs Asturias. I believe immersive technology is a transformative tool.",
+    "about.p1": "I've always believed that games and immersive technology can change how we learn, work and connect. That's why I started: first as a curious player, then as a game development student, and today as an XR Developer & Product Owner. I specialized in Virtual and Augmented Reality because I saw where tech could make a real impact — in industrial training, rehabilitation, education and culture.",
+    "about.p2": "Today I lead XR products end-to-end at INVELON: from understanding what the client needs to seeing the product on the store. I'm equally passionate about code (Unity, C#, .NET) and product strategy (backlog, estimations, stakeholders). I've worked with Innovae Group, ITCL and other leading R&D+i companies, always at the intersection of technology and people.",
+    "about.p3": "But what drives me most is community. I co-organize GameDevs Asturias, where we connect creators, students and professionals in games and XR across Asturias. I've also been a lecturer at Universidad de Burgos, a speaker at events like FIMP, UBU Party and Festival Creando, and a mentor at game jams. I believe in sharing what you learn — and surrounding yourself with people who push you to be better.",
     "about.sign": "\"Knowledge is power, but enthusiasm pulls the switch\"",
 
     /* Experience */
@@ -176,6 +185,15 @@ const i18n = {
     "exp.edu_1": "MBA — Digital Transformation, IT Leadership, Project & Team Management (UNIR)",
     "exp.edu_2": "BSc — Video Game Design & Development (UCJC)",
     "exp.edu_3": "HND — Creative Media Production – Game Development (UDIT)",
+
+    /* Events organized */
+    "events.title": "Events Organized",
+    "events.subtitle": "Events I've co-organized in Asturias to grow the game dev and XR community.",
+    "events.gamedevs25": "GameDevs Asturias Meetup 2025",
+    "events.ggj26": "Global Game Jam Asturias 2026",
+    "events.gamedevs26": "GameDevs Asturias Meetup 2026",
+    "events.cometcon26": "Indie Call — CometCon 2026",
+    "events.gamedevs_url": "https://www.instagram.com/gamedevs.asturias/",
 
     /* Projects */
     "projects.title": "Projects",
