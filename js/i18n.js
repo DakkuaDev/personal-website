@@ -36,7 +36,7 @@ const i18n = {
 
     /* About — rewritten with personal voice */
     "about.title": "Sobre Mí",
-    "about.intro": "XR Developer & Product Owner — diseño y entrego productos inmersivos (VR/AR/XR) de principio a fin: desde discovery y backlog hasta implementación en Unity/C# y despliegue en store. MBA + Google PM cert. Community builder (GameDevs Asturias).",
+    "about.intro": "XR Developer & Product Owner — productos inmersivos (VR/AR/XR) de principio a fin. MBA + Google PM cert. Community builder.",
     "about.p1": "Siempre he creído que los videojuegos y la tecnología inmersiva pueden cambiar la forma en que aprendemos, trabajamos y nos conectamos. Por eso empecé: primero como jugador curioso, luego como estudiante de desarrollo de videojuegos, y hoy como XR Developer & Product Owner. Mi camino me llevó a especializarme en Realidad Virtual y Aumentada porque vi que era donde la tecnología podía tener un impacto real — en formación industrial, rehabilitación, educación y cultura.",
     "about.p2": "Hoy lidero productos XR end-to-end en INVELON: desde entender qué necesita el cliente hasta ver el producto en la store. Me apasiona tanto el código (Unity, C#, .NET) como la estrategia de producto (backlog, estimaciones, stakeholders). He trabajado con Innovae Group, ITCL y otras empresas punteras en I+D+i, siempre en la intersección entre tecnología y personas.",
     "about.p3": "Pero lo que más me motiva es la comunidad. Soy co-organizador de GameDevs Asturias, donde conectamos a creadores, estudiantes y profesionales del videojuego y la XR en Asturias. También he sido profesor en la Universidad de Burgos, ponente en eventos como FIMP, UBU Party y el Festival Creando, y mentor en game jams. Creo en compartir lo que aprendes — y en rodearte de gente que te empuja a ser mejor.",
@@ -146,7 +146,7 @@ const i18n = {
 
     /* About — rewritten with personal voice */
     "about.title": "About Me",
-    "about.intro": "XR Developer & Product Owner — I design and ship immersive VR/AR/XR products end-to-end: from discovery and backlog to Unity/C# implementation and store deployment. MBA + Google PM cert. Community builder (GameDevs Asturias).",
+    "about.intro": "XR Developer & Product Owner — immersive products (VR/AR/XR) end-to-end. MBA + Google PM cert. Community builder.",
     "about.p1": "I've always believed that games and immersive technology can change how we learn, work and connect. That's why I started: first as a curious player, then as a game development student, and today as an XR Developer & Product Owner. I specialized in Virtual and Augmented Reality because I saw where tech could make a real impact — in industrial training, rehabilitation, education and culture.",
     "about.p2": "Today I lead XR products end-to-end at INVELON: from understanding what the client needs to seeing the product on the store. I'm equally passionate about code (Unity, C#, .NET) and product strategy (backlog, estimations, stakeholders). I've worked with Innovae Group, ITCL and other leading R&D+i companies, always at the intersection of technology and people.",
     "about.p3": "But what drives me most is community. I co-organize GameDevs Asturias, where we connect creators, students and professionals in games and XR across Asturias. I've also been a lecturer at Universidad de Burgos, a speaker at events like FIMP, UBU Party and Festival Creando, and a mentor at game jams. I believe in sharing what you learn — and surrounding yourself with people who push you to be better.",
