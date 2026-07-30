@@ -98,6 +98,21 @@
 		.speaking-list .talk-title { font-weight: 600; color: #262F5A; }
 		.speaking-list .talk-where { font-size: 13px; color: #999; }
 		.speaking-list .talk-year { font-size: 12px; color: #3639AE; font-weight: 500; }
+
+		/* Speaking photos carousel */
+		.speaking-carousel-wrap { margin-top: 35px; max-width: 600px; margin-left: auto; margin-right: auto; position: relative; }
+		.speaking-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; gap: 15px; -webkit-overflow-scrolling: touch; padding: 5px 0; }
+		.speaking-carousel::-webkit-scrollbar { display: none; }
+		.speaking-carousel .slide { flex: 0 0 100%; scroll-snap-align: start; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 15px rgba(0,0,0,0.08); background: #fff; }
+		.speaking-carousel .slide img { width: 100%; height: 260px; object-fit: cover; display: block; }
+		.carousel-dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+		.carousel-dots .dot { width: 10px; height: 10px; border-radius: 50%; background: #ccc; cursor: pointer; transition: background 0.3s; border: none; padding: 0; }
+		.carousel-dots .dot.active { background: #3639AE; }
+		.carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; background: rgba(255,255,255,0.9); border: none; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.12); font-size: 18px; line-height: 36px; text-align: center; color: #333; transition: all 0.2s; }
+		.carousel-arrow:hover { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+		.carousel-arrow.prev { left: -18px; }
+		.carousel-arrow.next { right: -18px; }
+		@media (max-width: 768px) { .speaking-carousel .slide img { height: 200px; } .carousel-arrow { display: none; } }
 		
 		/* Lang toggle in mobile */
 		@media (max-width: 768px) {
@@ -366,6 +381,25 @@
 					</ul>
 				</div>
 			</div>
+			<!-- Speaking photos carousel -->
+			<div class="row">
+				<div class="col-12">
+					<div class="speaking-carousel-wrap">
+						<button class="carousel-arrow prev" onclick="scrollCarousel(-1)">‹</button>
+						<div class="speaking-carousel" id="speakingCarousel">
+							<div class="slide"><img src="images/myPics/ponencia-creando.jpg" alt="Ponencia Festival Creando"></div>
+							<div class="slide"><img src="images/myPics/ponencia-proyector.jpg" alt="Ponencia con proyector"></div>
+							<div class="slide"><img src="images/myPics/ponencia-charla.jpg" alt="Charla en café-bar"></div>
+						</div>
+						<button class="carousel-arrow next" onclick="scrollCarousel(1)">›</button>
+						<div class="carousel-dots" id="carouselDots">
+							<button class="dot active" onclick="goToSlide(0)"></button>
+							<button class="dot" onclick="goToSlide(1)"></button>
+							<button class="dot" onclick="goToSlide(2)"></button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -519,6 +553,48 @@
 				}, 600);
 			}
 		});
+
+		// Speaking carousel
+		const carousel = document.getElementById('speakingCarousel');
+		const dots = document.querySelectorAll('#carouselDots .dot');
+		let autoInterval;
+
+		function updateDots() {
+			const slideWidth = carousel.children[0]?.offsetWidth || 1;
+			const scrollLeft = carousel.scrollLeft;
+			const idx = Math.round(scrollLeft / slideWidth);
+			dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+		}
+
+		function goToSlide(idx) {
+			const slideWidth = carousel.children[0]?.offsetWidth || 1;
+			carousel.scrollTo({ left: idx * slideWidth, behavior: 'smooth' });
+		}
+
+		function scrollCarousel(dir) {
+			const slideWidth = carousel.children[0]?.offsetWidth || 1;
+			const idx = Math.round(carousel.scrollLeft / slideWidth) + dir;
+			const max = carousel.children.length - 1;
+			goToSlide(Math.max(0, Math.min(idx, max)));
+		}
+
+		// Auto-advance every 4 seconds, reset on manual interaction
+		function startAuto() {
+			stopAuto();
+			autoInterval = setInterval(() => {
+				const slideWidth = carousel.children[0]?.offsetWidth || 1;
+				const current = Math.round(carousel.scrollLeft / slideWidth);
+				const next = (current + 1) % carousel.children.length;
+				goToSlide(next);
+			}, 4000);
+		}
+		function stopAuto() { clearInterval(autoInterval); }
+
+		carousel.addEventListener('scroll', updateDots);
+		carousel.addEventListener('touchstart', stopAuto);
+		carousel.addEventListener('touchend', startAuto);
+		dots.forEach(d => d.addEventListener('click', stopAuto));
+		startAuto();
 
 		// Render projects on init (i18n.js handles re-render on language switch)
 		$(document).ready(function() {
