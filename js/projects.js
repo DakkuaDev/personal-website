@@ -6,6 +6,7 @@
 // 
 // Required fields per project:
 //   id: unique string
+//   category: "professional" | "academic" | "personal"
 //   title: { es, en }
 //   description: { es, en }
 //   year: string
@@ -13,11 +14,16 @@
 //   image: path or "images/myPics/logo-2.png" as placeholder
 //   links: { github, itchio, steam, external } — set null if not available
 //   tags: array of strings
+//
+// Projects render grouped by category (Professional → Academic → Personal)
+// and sorted by year (newest first) within each group.
 // ============================================================
 
 const projectsData = [
+  // ========== PROFESSIONAL ==========
   {
     id: "poblarte",
+    category: "professional",
     title: {
       es: "PoblARte — Realidad Aumentada",
       en: "PoblARte — Augmented Reality"
@@ -41,55 +47,8 @@ const projectsData = [
     tags: ["AR", "Unity", "Android", "iOS", "Cultural Heritage"]
   },
   {
-    id: "vrfp-alta-tension",
-    title: {
-      es: "Simulador VR — Trabajos en Media y Alta Tensión",
-      en: "VR Simulator — Medium & High Voltage Work"
-    },
-    description: {
-      es: "Simulador en Realidad Virtual para el entrenamiento en trabajos de mantenimiento en instalaciones de media y alta tensión. Desarrollado para el programa Aulas Ateca (Meta Quest 2).",
-      en: "VR simulator for training in high/medium voltage maintenance work. Developed for the Aulas Ateca program (Meta Quest 2)."
-    },
-    year: "2022",
-    role: {
-      es: "Unity VR Developer",
-      en: "Unity VR Developer"
-    },
-    image: "images/myPics/vrfp-alta-tension.jpg",
-    links: {
-      github: null,
-      itchio: null,
-      steam: null,
-      external: "https://vrfp.es/simuladores/trabajos-en-media-y-alta-tension/"
-    },
-    tags: ["VR", "Unity", "Meta Quest 2", "Formación Profesional"]
-  },
-  {
-    id: "vrfp-jardineria",
-    title: {
-      es: "Simulador VR — Jardinería y Forestal",
-      en: "VR Simulator — Gardening & Forestry"
-    },
-    description: {
-      es: "Simulador VR para practicar con herramientas de jardinería y forestales, manejo de plataforma elevadora y EPIs. Desarrollado para Aulas Ateca (Meta Quest 2).",
-      en: "VR simulator for practicing with gardening and forestry tools, aerial platform operation and PPE. Developed for Aulas Ateca (Meta Quest 2)."
-    },
-    year: "2022",
-    role: {
-      es: "Unity VR Developer",
-      en: "Unity VR Developer"
-    },
-    image: "images/myPics/vrfp-jardineria.jpg",
-    links: {
-      github: null,
-      itchio: null,
-      steam: null,
-      external: "https://vrfp.es/simuladores/jardineria-y-forestal/"
-    },
-    tags: ["VR", "Unity", "Meta Quest 2", "Formación Profesional"]
-  },
-  {
     id: "funper",
+    category: "professional",
     title: {
       es: "FUNPER — Rehabilitación con IA y VR",
       en: "FUNPER — AI & VR Rehabilitation"
@@ -114,6 +73,7 @@ const projectsData = [
   },
   {
     id: "genius",
+    category: "professional",
     title: {
       es: "GENIUS — IA Emocional para Vehículos",
       en: "GENIUS — Emotional AI for Vehicles"
@@ -137,55 +97,60 @@ const projectsData = [
     tags: ["AI", "Automotive", "ITCL", "Biometrics", "R&D"]
   },
   {
-    id: "worldlabs",
+    id: "vrfp-alta-tension",
+    category: "professional",
     title: {
-      es: "Unity WorldLabs.ai API Client Tool",
-      en: "Unity WorldLabs.ai API Client Tool"
+      es: "Simulador VR — Trabajos en Media y Alta Tensión",
+      en: "VR Simulator — Medium & High Voltage Work"
     },
     description: {
-      es: "Middleware para Unity 6 que permite generar e importar entornos 3D Gaussian Splat desde un prompt de texto, con jerarquía de escena automática, colliders y coordenadas reales.",
-      en: "Unity 6 editor middleware for the World Labs API — generate and import Gaussian Splat 3D environments from a text prompt, with automatic scene hierarchy, collider mesh, and real-world coordinates."
+      es: "Simulador en Realidad Virtual para el entrenamiento en trabajos de mantenimiento en instalaciones de media y alta tensión. Desarrollado para el programa Aulas Ateca (Meta Quest 2).",
+      en: "VR simulator for training in high/medium voltage maintenance work. Developed for the Aulas Ateca program (Meta Quest 2)."
     },
-    year: "2025",
+    year: "2022",
     role: {
-      es: "Desarrollador Unity",
-      en: "Unity Developer"
+      es: "Unity VR Developer",
+      en: "Unity VR Developer"
     },
-    image: "images/myPics/worldlabs-screenshot.jpg",
-    links: {
-      github: "https://github.com/DakkuaDev/unity-worldlabs.ai-API-client-tool",
-      itchio: null,
-      steam: null,
-      external: null
-    },
-    tags: ["Unity", "C#", "AI", "Gaussian Splat", "Editor Tool"]
-  },
-  {
-    id: "harriet",
-    title: {
-      es: "Harriet: From Slave To Hero",
-      en: "Harriet: From Slave To Hero"
-    },
-    description: {
-      es: "Serious game de estrategia por turnos basado en la vida de Harriet Tubman. Producido y programado para KKO Team.",
-      en: "Turn-based strategy serious game based on Harriet Tubman's life. Produced and programmed for KKO Team."
-    },
-    year: "2021",
-    role: {
-      es: "Productor & Programador",
-      en: "Producer & Programmer"
-    },
-    image: "images/myPics/harriet-workv2.jpg",
+    image: "images/myPics/vrfp-alta-tension.jpg",
     links: {
       github: null,
-      itchio: "https://kko-team.itch.io/harriet-from-slave-to-hero-beta",
+      itchio: null,
       steam: null,
-      external: null
+      external: "https://vrfp.es/simuladores/trabajos-en-media-y-alta-tension/"
     },
-    tags: ["Unity", "C#", "Serious Game", "Estrategia"]
+    tags: ["VR", "Unity", "Meta Quest 2", "Formación Profesional"]
   },
   {
+    id: "vrfp-jardineria",
+    category: "professional",
+    title: {
+      es: "Simulador VR — Jardinería y Forestal",
+      en: "VR Simulator — Gardening & Forestry"
+    },
+    description: {
+      es: "Simulador VR para practicar con herramientas de jardinería y forestales, manejo de plataforma elevadora y EPIs. Desarrollado para Aulas Ateca (Meta Quest 2).",
+      en: "VR simulator for practicing with gardening and forestry tools, aerial platform operation and PPE. Developed for Aulas Ateca (Meta Quest 2)."
+    },
+    year: "2022",
+    role: {
+      es: "Unity VR Developer",
+      en: "Unity VR Developer"
+    },
+    image: "images/myPics/vrfp-jardineria.jpg",
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://vrfp.es/simuladores/jardineria-y-forestal/"
+    },
+    tags: ["VR", "Unity", "Meta Quest 2", "Formación Profesional"]
+  },
+
+  // ========== ACADEMIC ==========
+  {
     id: "hatintime",
+    category: "academic",
     title: {
       es: "A Hat In Time — Stand Virtual RA",
       en: "A Hat In Time — AR Virtual Stand"
@@ -209,55 +174,8 @@ const projectsData = [
     tags: ["3D Art", "AR", "Sketchfab", "Marketing"]
   },
   {
-    id: "connected",
-    title: {
-      es: "Connected — Global Game Jam",
-      en: "Connected — Global Game Jam"
-    },
-    description: {
-      es: "Videojuego desarrollado durante la Global Game Jam 2019 bajo la temática 'Hogar'.",
-      en: "Game developed during Global Game Jam 2019 under the theme 'Home'."
-    },
-    year: "2019",
-    role: {
-      es: "Desarrollador",
-      en: "Developer"
-    },
-    image: "images/myPics/Connected-work.jpg",
-    links: {
-      github: null,
-      itchio: "https://dakkua.itch.io/connected",
-      steam: null,
-      external: null
-    },
-    tags: ["Game Jam", "Unity", "WebGL"]
-  },
-  {
-    id: "super-frogger",
-    title: {
-      es: "Super Fr#gger",
-      en: "Super Fr#gger"
-    },
-    description: {
-      es: "Recreación del clásico Frogger de Atari con gráficos actualizados, desarrollado en .NET sin motor gráfico.",
-      en: "Recreation of the classic Atari Frogger with updated graphics, built in .NET without a game engine."
-    },
-    year: "2019",
-    role: {
-      es: "Desarrollador",
-      en: "Developer"
-    },
-    image: "images/myPics/super-frogger-work.jpg",
-    links: {
-      github: null,
-      itchio: null,
-      steam: null,
-      external: "https://www.youtube.com/watch?v=rParZHkI3eY"
-    },
-    tags: [".NET", "C#", "2D", "Retro"]
-  },
-  {
     id: "tempus-runit",
+    category: "academic",
     title: {
       es: "Tempus Runit",
       en: "Tempus Runit"
@@ -281,7 +199,33 @@ const projectsData = [
     tags: ["Unity", "Mobile", "Android", "Endless Runner"]
   },
   {
+    id: "super-frogger",
+    category: "academic",
+    title: {
+      es: "Super Fr#gger",
+      en: "Super Fr#gger"
+    },
+    description: {
+      es: "Recreación del clásico Frogger de Atari con gráficos actualizados, desarrollado en .NET sin motor gráfico.",
+      en: "Recreation of the classic Atari Frogger with updated graphics, built in .NET without a game engine."
+    },
+    year: "2019",
+    role: {
+      es: "Desarrollador",
+      en: "Developer"
+    },
+    image: "images/myPics/super-frogger-work.jpg",
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://www.youtube.com/watch?v=rParZHkI3eY"
+    },
+    tags: [".NET", "C#", "2D", "Retro"]
+  },
+  {
     id: "brid-mizmace",
+    category: "academic",
     title: {
       es: "Brid Mizmace",
       en: "Brid Mizmace"
@@ -304,8 +248,61 @@ const projectsData = [
     },
     tags: ["Unity", "Pixel Art", "2D", "Plataformas"]
   },
+
+  // ========== PERSONAL ==========
+  {
+    id: "photomask",
+    category: "personal",
+    title: {
+      es: "PhotoMask",
+      en: "PhotoMask"
+    },
+    description: {
+      es: "Nunca Photoshop me había dado tantos problemas... Juego desarrollado en la Global Game Jam 2026 con Godot Engine.",
+      en: "Photoshop never gave me so many problems... Game developed at Global Game Jam 2026 with Godot Engine."
+    },
+    year: "2026",
+    role: {
+      es: "Desarrollador",
+      en: "Developer"
+    },
+    image: "images/myPics/photomask-screenshot.jpg",
+    links: {
+      github: null,
+      itchio: null,
+      steam: null,
+      external: "https://globalgamejam.org/games/2026/photomask-1"
+    },
+    tags: ["Godot", "Game Jam", "GGJ 2026", "Windows"]
+  },
+  {
+    id: "worldlabs",
+    category: "personal",
+    title: {
+      es: "Unity WorldLabs.ai API Client Tool",
+      en: "Unity WorldLabs.ai API Client Tool"
+    },
+    description: {
+      es: "Middleware para Unity 6 que permite generar e importar entornos 3D Gaussian Splat desde un prompt de texto, con jerarquía de escena automática, colliders y coordenadas reales.",
+      en: "Unity 6 editor middleware for the World Labs API — generate and import Gaussian Splat 3D environments from a text prompt, with automatic scene hierarchy, collider mesh, and real-world coordinates."
+    },
+    year: "2025",
+    role: {
+      es: "Desarrollador Unity",
+      en: "Unity Developer"
+    },
+    image: "images/myPics/worldlabs-screenshot.jpg",
+    links: {
+      github: "https://github.com/DakkuaDev/unity-worldlabs.ai-API-client-tool",
+      itchio: null,
+      steam: null,
+      external: null
+    },
+    tags: ["Unity", "C#", "AI", "Gaussian Splat", "Editor Tool"]
+  },
   {
     id: "haunted-mansion",
+    category: "personal",
     title: {
       es: "The Haunted Mansion",
       en: "The Haunted Mansion"
@@ -327,57 +324,138 @@ const projectsData = [
       external: null
     },
     tags: ["Godot", "Game Jam", "2D", "Pixel Art"]
+  },
+  {
+    id: "harriet",
+    category: "personal",
+    title: {
+      es: "Harriet: From Slave To Hero",
+      en: "Harriet: From Slave To Hero"
+    },
+    description: {
+      es: "Serious game de estrategia por turnos basado en la vida de Harriet Tubman. Producido y programado para KKO Team.",
+      en: "Turn-based strategy serious game based on Harriet Tubman's life. Produced and programmed for KKO Team."
+    },
+    year: "2021",
+    role: {
+      es: "Productor & Programador",
+      en: "Producer & Programmer"
+    },
+    image: "images/myPics/harriet-workv2.jpg",
+    links: {
+      github: null,
+      itchio: "https://kko-team.itch.io/harriet-from-slave-to-hero-beta",
+      steam: null,
+      external: null
+    },
+    tags: ["Unity", "C#", "Serious Game", "Estrategia"]
+  },
+  {
+    id: "connected",
+    category: "personal",
+    title: {
+      es: "Connected — Global Game Jam",
+      en: "Connected — Global Game Jam"
+    },
+    description: {
+      es: "Videojuego desarrollado durante la Global Game Jam 2019 bajo la temática 'Hogar'.",
+      en: "Game developed during Global Game Jam 2019 under the theme 'Home'."
+    },
+    year: "2019",
+    role: {
+      es: "Desarrollador",
+      en: "Developer"
+    },
+    image: "images/myPics/Connected-work.jpg",
+    links: {
+      github: null,
+      itchio: "https://dakkua.itch.io/connected",
+      steam: null,
+      external: null
+    },
+    tags: ["Game Jam", "Unity", "WebGL"]
   }
 ];
 
 // ============================================================
 // PROJECT RENDERER — renders projects into the DOM
 // Called on page load and on language switch.
+// Groups by category (Professional → Academic → Personal),
+// newest year first within each group.
 // ============================================================
 
 function renderProjects(lang) {
   const container = document.getElementById("projects-grid");
   if (!container) return;
 
-  container.innerHTML = projectsData.map(project => {
-    const title = project.title[lang] || project.title.en;
-    const desc = project.description[lang] || project.description.en;
-    const role = project.role[lang] || project.role.en;
+  const categoryOrder = ["professional", "academic", "personal"];
+  const grouped = { professional: [], academic: [], personal: [] };
 
-    // Build link buttons for available platforms
-    let linksHtml = "";
-    if (project.links.github) {
-      linksHtml += `<a href="${project.links.github}" target="_blank" class="project-link github" title="GitHub"><i class="fa fa-github"></i></a>`;
-    }
-    if (project.links.itchio) {
-      linksHtml += `<a href="${project.links.itchio}" target="_blank" class="project-link itchio" title="itch.io"><i class="fa fa-gamepad"></i></a>`;
-    }
-    if (project.links.steam) {
-      linksHtml += `<a href="${project.links.steam}" target="_blank" class="project-link steam" title="Steam"><i class="fa fa-steam"></i></a>`;
-    }
-    if (project.links.external) {
-      linksHtml += `<a href="${project.links.external}" target="_blank" class="project-link external" title="${lang === 'es' ? 'Ver proyecto' : 'View project'}"><i class="fa fa-external-link"></i></a>`;
-    }
+  projectsData.forEach(project => {
+    const cat = project.category || "personal";
+    if (grouped[cat]) grouped[cat].push(project);
+    else grouped.personal.push(project);
+  });
 
-    // Tags
-    const tagsHtml = project.tags.map(t => `<span class="project-tag">${t}</span>`).join("");
+  // Sort each group by year, newest first
+  Object.values(grouped).forEach(list => {
+    list.sort((a, b) => parseInt(b.year) - parseInt(a.year));
+  });
 
+  container.innerHTML = categoryOrder.map(cat => {
+    const items = grouped[cat];
+    if (!items.length) return "";
+    const catKey = "projects.category_" + cat;
+    const catTitle = (i18n[lang] && i18n[lang][catKey]) || catKey;
     return `
-      <article class="project-card has-animation animate-in" data-delay="0">
-        <div class="project-image">
-          <img src="${project.image}" alt="${title}" onerror="this.src='images/myPics/logo-2.png'">
+      <div class="projects-category">
+        <h2 class="projects-category-title">${catTitle}</h2>
+        <div class="projects-grid">
+          ${items.map(project => projectCard(project, lang)).join("")}
         </div>
-        <div class="project-content">
-          <div class="project-meta">
-            <span class="project-year">${project.year}</span>
-            <span class="project-role">${role}</span>
-          </div>
-          <h3 class="project-title">${title}</h3>
-          <p class="project-description">${desc}</p>
-          <div class="project-tags">${tagsHtml}</div>
-          <div class="project-links">${linksHtml}</div>
-        </div>
-      </article>
+      </div>
     `;
   }).join("");
+}
+
+function projectCard(project, lang) {
+  const title = project.title[lang] || project.title.en;
+  const desc = project.description[lang] || project.description.en;
+  const role = project.role[lang] || project.role.en;
+
+  // Build link buttons for available platforms
+  let linksHtml = "";
+  if (project.links.github) {
+    linksHtml += `<a href="${project.links.github}" target="_blank" class="project-link github" title="GitHub"><i class="fa fa-github"></i></a>`;
+  }
+  if (project.links.itchio) {
+    linksHtml += `<a href="${project.links.itchio}" target="_blank" class="project-link itchio" title="itch.io"><i class="fa fa-gamepad"></i></a>`;
+  }
+  if (project.links.steam) {
+    linksHtml += `<a href="${project.links.steam}" target="_blank" class="project-link steam" title="Steam"><i class="fa fa-steam"></i></a>`;
+  }
+  if (project.links.external) {
+    linksHtml += `<a href="${project.links.external}" target="_blank" class="project-link external" title="${lang === 'es' ? 'Ver proyecto' : 'View project'}"><i class="fa fa-external-link"></i></a>`;
+  }
+
+  // Tags
+  const tagsHtml = project.tags.map(t => `<span class="project-tag">${t}</span>`).join("");
+
+  return `
+    <article class="project-card has-animation animate-in" data-delay="0">
+      <div class="project-image">
+        <img src="${project.image}" alt="${title}" loading="lazy" onerror="this.src='images/myPics/logo-2.png'">
+      </div>
+      <div class="project-content">
+        <div class="project-meta">
+          <span class="project-year">${project.year}</span>
+          <span class="project-role">${role}</span>
+        </div>
+        <h3 class="project-title">${title}</h3>
+        <p class="project-description">${desc}</p>
+        <div class="project-tags">${tagsHtml}</div>
+        <div class="project-links">${linksHtml}</div>
+      </div>
+    </article>
+  `;
 }
