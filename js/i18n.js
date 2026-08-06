@@ -84,6 +84,9 @@ const i18n = {
 
     /* Projects */
     "projects.title": "Proyectos",
+    "projects.category_professional": "Proyectos Profesionales",
+    "projects.category_academic": "Proyectos Académicos",
+    "projects.category_personal": "Proyectos Personales",
     "projects.github": "GitHub",
     "projects.itchio": "itch.io",
     "projects.view": "Ver proyecto",
@@ -194,6 +197,9 @@ const i18n = {
 
     /* Projects */
     "projects.title": "Projects",
+    "projects.category_professional": "Professional Projects",
+    "projects.category_academic": "Academic Projects",
+    "projects.category_personal": "Personal Projects",
     "projects.github": "GitHub",
     "projects.itchio": "itch.io",
     "projects.view": "View project",
@@ -316,13 +322,13 @@ function updateMetaTags(lang) {
   }
   if (metaDesc) {
     metaDesc.content = lang === "es"
-      ? "Portfolio de Daniel Guerra, XR Developer y Product Owner especializado en Unity3D, VR/AR/XR."
-      : "Daniel Guerra's portfolio — XR Developer & Product Owner specialized in Unity3D, VR/AR/XR.";
+      ? "Portfolio de Daniel Guerra, XR Developer y Product Owner especializado en Unity3D, VR/AR/XR, con experiencia en gestión de proyectos (Project Manager)."
+      : "Daniel Guerra's portfolio — XR Developer & Product Owner specialized in Unity3D, VR/AR/XR, with project management experience (Project Manager).";
   }
   if (metaOgDesc) {
     metaOgDesc.content = lang === "es"
-      ? "Portfolio de Daniel Guerra, XR Developer y Product Owner especializado en Unity3D, VR/AR/XR."
-      : "Daniel Guerra's portfolio — XR Developer & Product Owner specialized in Unity3D, VR/AR/XR.";
+      ? "Portfolio de Daniel Guerra, XR Developer y Product Owner especializado en Unity3D, VR/AR/XR, con experiencia en gestión de proyectos (Project Manager)."
+      : "Daniel Guerra's portfolio — XR Developer & Product Owner specialized in Unity3D, VR/AR/XR, with project management experience (Project Manager).";
   }
   document.title = lang === "es"
     ? "Daniel Guerra Gallardo — XR Developer & Product Owner"
